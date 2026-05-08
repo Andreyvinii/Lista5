@@ -1,0 +1,31 @@
+#include <stdio.h>
+int main (){
+    float orcamento, produto, total = 0;
+    int quantidadeProdutos = 0;
+
+    printf ("Digite o orçamento: ");
+    scanf ("%f", &orcamento);
+
+    while (total <= orcamento){
+        printf ("Digite seu produto: ");
+        scanf ("%f", &produto);
+
+        if (produto > 0) { 
+            total = total + produto;
+            printf ("O valor total atual é: %.1f\n", total); 
+        }
+        else if (total > orcamento) {
+            printf ("Orçamento foi excedido!\n");
+        }
+        else if (produto <= 0) {
+            printf ("Valor Inválido!\n");
+        }
+        else {
+            printf ("Valor Inválido!\n");
+        }
+    }
+
+    printf ("Total da compra: %.2f", total);
+    printf ("Produtos Válidos: %d", quantidadeProdutos);
+    return 0;
+}
