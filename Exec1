@@ -1,0 +1,24 @@
+#include <stdio.h>
+ 
+int main () {
+    int i, codigo;
+    int validos = 0, invalidos = 0;
+
+    for (i=1;i<=10;i++){
+        printf ("Insira um código: ");
+        scanf ("%d", &codigo);
+
+        if (codigo >=1000 && codigo <=9999){
+            validos++;
+            printf ("Código Válido\n");
+        }
+        else {
+            invalidos++;
+            printf ("Código Inválido\n");
+        }
+    }
+    printf ("Códigos Válidos: %d\n", validos);
+    printf ("Códigos Inválidos: %d\n", invalidos);
+    
+    return 0;
+}
