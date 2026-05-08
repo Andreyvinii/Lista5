@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main () {
+    int nota, continuar;
+    int quantidade = 0, soma = 0;
+    float media;
+
+    //Implemente aqui um Do while
+    // leia nota, nota >= 1 e nota <=5, some e conte
+    //senao exiba nota invalida
+    // pergunte se deseja continuar
+    if (quantidade > 0) {
+        media = (float) soma/quantidade;
+        printf ("Média: %.2f", media);
+    }
+    else {
+        printf ("Nenhum nota válida registrada.");
+    }
+    return 0;
+}
