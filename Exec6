@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main (){
+    int prioridade, continuar;
+    int baixa = 0, media = 0, alta = 0;
+
+    do {
+        printf ("Nível de Prioridade: ");
+        scanf ("%d", &prioridade);
+        if (prioridade == 1) {
+            printf ("baixa\n");
+            baixa++;
+        }
+        else if (prioridade == 2)
+        {
+           printf ("média\n");
+           media++;
+        }
+        else if (prioridade == 3) {
+            printf ("alta\n");
+            alta++;
+        }
+        else {
+            printf ("prioridade inválida\n");
+        }
+
+        printf ("DESEJA CONTINUAR? (0 - não/1 - sim)\n");
+        scanf ("%d", &continuar);
+    }
+        while (continuar != 0);
+    printf ("Baixa: %d", baixa);
+    printf ("Média: %d", media);
+    printf ("Alta: %d", alta);
+    return 0;
+}
