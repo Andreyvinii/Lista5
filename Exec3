@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main (){
+    int opcao;
+    float saldo = 1000.00, deposito;
+
+    do {
+        printf ("MENU:\n");
+        printf ("'1' - CONSULTAR SALDO\n");
+        printf ("'2' - DEPOSITAR \n");
+        printf ("'0' - SAIR\n");
+        scanf ("%d", &opcao);
+    
+        if (opcao == 1){
+            printf ("Seu saldo é de: %.2f\n", saldo);
+        }
+        else if (opcao == 2){
+            printf ("Insira o valor do depósito: ");
+            scanf ("%f", &deposito);
+            saldo = deposito + saldo; 
+        }
+        else {
+            printf ("Encerrando Programa Bancário\n");
+        }
+    }
+    while (opcao!=0);
+    return 0;
+} 
