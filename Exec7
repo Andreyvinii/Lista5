@@ -1,0 +1,20 @@
+#include <stdio.h>
+int main (){
+    int i;
+    float temperatura;
+    int seguras = 0, risco = 0;
+
+    for (i=1;i<=12;i++){
+        if (temperatura <=75) {
+            printf ("Seguras");
+            seguras ++; 
+        }
+        else {
+            printf ("Risco");
+            risco ++;
+    }
+    printf ("Seguras: %d", seguras); 
+    printf ("Riscos: %d", risco);
+
+    return 0;
+}
