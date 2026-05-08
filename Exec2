@@ -1,0 +1,24 @@
+#include <stdio.h>
+    int main (){
+        float meta, valorMes, total = 0;
+        int mesesValidos = 0;
+
+        printf ("Digite a meta de economia: ");
+        scanf ("%f", &meta);
+
+        while (total < meta){
+            printf ("Valor Mensal: ");
+            scanf ("%f", &valorMes);
+            
+            if (valorMes > 0) {
+            total = valorMes + total;
+            mesesValidos++;
+            }
+            else {
+                printf ("Valor Desconsiderado\n");
+            }
+        }
+        printf ("Total economizado:%.2f", total);
+        printf ("Meses Válidos: %d", mesesValidos);
+        return 0;
+    }
