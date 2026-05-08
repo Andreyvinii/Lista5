@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main () {
+    int codigo;
+    printf ("Digite o código de acesso: ");
+    scanf ("%d", &codigo);
+    
+    while (codigo !=4321) {
+        printf ("Código Incorreto\n");
+        printf ("Digite o código de acesso: ");
+        scanf ("%d", &codigo);
+    }
+    return 0;
+}
