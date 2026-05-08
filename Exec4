@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main () {
+    int i, status;
+    int concluidas = 0, pendentes = 0;
+
+    // Implemente aqui um FOR DE OITO
+    // Leia status
+    // status == 1 concluidas ++
+    // else pendentes ++
+    printf ("Concluidas: %d", concluidas);
+    printf ("Pendentes: %d", pendentes); 
+    return 0;
+}
